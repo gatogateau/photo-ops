@@ -19,6 +19,6 @@ const eachUser = new Schema(
     });
   
 
-    const Games = mongoose.model("Games", gamePlay);
+    const User = mongoose.model("User", eachUser);
 
-    module.exports = Games;
+    module.exports = User;

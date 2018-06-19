@@ -10,10 +10,14 @@ const gamePlay= new Schema(
   // name of the game 
       game:String,
       // all the players in the game
+
+      // need to add players alive or not during game
+      // alive = yes (user still playing), 
       players:[Number],
       stats:Integer,
-      // alive = yes (user still playing), 
-      alive:Boolean,   
+      
+      
+      playing:Boolean,   
     });
 
 

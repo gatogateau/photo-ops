@@ -1,5 +1,6 @@
 # photo-ops
-Interactive game
+Interactive game involving teams
+
 
 
 

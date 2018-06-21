@@ -12,6 +12,7 @@ const eachUser = new Schema(
       kills:Integer,
       deaths:Integer,
       gamesPlayed:Integer,
+      playerLevel:String,
       adOns:[String],
       date: new Date(Date.now()),
       target:Integer,

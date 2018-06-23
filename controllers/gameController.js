@@ -13,11 +13,21 @@ module.exports = {
         .catch(err => res.status(422).json(err));
     },
 
-    // find each game by username
+    // find each current game by username  get
 
-    // find each game by name
+    // find each game by name  get
 
-    // find each current game
-    
-    
+    // find each current game  get
+
+    // create a game  post
+
+    // load a game with all the players with their game status
+
+    // join a game Post - add user to game
+
+    // update game - if player dies, or eliminates target, change to not active and update the target.  
+
+    // 
+
+
 };

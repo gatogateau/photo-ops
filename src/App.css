@@ -26,3 +26,21 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.cambutt {
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+}
+.profilepic {
+  margin-top: 20px;
+}
+button {
+  max-width: 100px;
+  border-radius: 20%;
+  background-color: black;
+  color: aliceblue;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50%;
+}

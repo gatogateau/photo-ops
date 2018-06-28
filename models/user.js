@@ -16,7 +16,8 @@ const eachUser = new Schema(
       adOns:[String],
       date: new Date(Date.now()),
       target:Integer,
-      activeGames:[Number],
+      // does aciveGames need to be a [String] or [Interger]
+      activeGames:[String],
     });
   
 

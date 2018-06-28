@@ -1,19 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import FacebookLogin from './components/FacebookLogin';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Route from 'react-router-dom/Route';
+// import LogInPage from './components/LogInPage/TabsPage';
+import TabsPage from './components/AuthPage/AuthPage';
+// import Example from './components/Nav/Nav';
+import Home from './pages/homepage/home';
+import JoinGame from './pages/JoinGame/JoinGame';
+// import { Card, Button, CardHeader, CardFooter, CardBody,
+// CardTitle, CardText } from 'reactstrap';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div className="App">
+
+        <Route path="/" exact render={
+          () => {
+            return (<TabsPage></TabsPage>)
+          }
+        } />
+
+        <Route path="/home" exact render={
+          () => {
+            return ( <Home /> )
+          }
+        } />
+
+        <Route path="/JoinGame" exact render={
+          () => {
+            return ( <JoinGame /> )
+          } 
+        } />
+          {/*<Example />*/}
+          {/*<TabsPage></TabsPage>
+           <FacebookLogin />*/}
+
+          
+
+        </div>
+      </Router>
     );
   }
 }
